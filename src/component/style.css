@@ -1,0 +1,600 @@
+/* styles.css */
+
+@font-face {
+    font-family: 'Adobe Clean Blod';
+    src: local('Adobe Clean Bold'), local('Adobe-Clean-Bold'),
+        url('../assets/fonts/AdobeClean-Bold.woff2') format('woff2'),
+        url('../assets/fonts/AdobeClean-Bold.woff') format('woff'),
+        url('../assets/fonts/AdobeClean-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Adobe Clean Light';
+    src: url('../assets/fonts/AdobeClean-SemiLight.woff2') format('woff2'),
+        url('../assets/fonts/AdobeClean-SemiLight.woff') format('woff'),
+        url('../assets/fonts/AdobeClean-SemiLight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Adobe Clean Regular';
+    src: url('../assets/fonts/AdobeClean-Regular.woff2') format('woff2'),
+        url('../assets/fonts/AdobeClean-Regular.woff') format('woff'),
+        url('../assets/fonts/AdobeClean-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Adobe Clean Light';
+    position: relative;
+    min-height: 100%;
+    padding-bottom: 148px;
+}
+*,:before,:after{
+    box-sizing: border-box;
+}
+h1,h2,h3,h4{
+    margin: 0;
+    font-family: 'Adobe Clean Blod';
+}
+.light{
+    font-family: 'Adobe Clean Light';
+}
+img {
+    width: auto;
+    max-width: 100%;
+}
+.container{
+    width: 100%;
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+#header {
+    background-image: url("../assets/img/main-header.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    padding: 120px 0 100px;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+#header h1 {
+    font-size: 42px;
+}
+#header h3 {
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+.video-title {
+    margin: 0 auto;
+    padding: 50px 0 15px;
+}
+.video-box {
+    display: flex;
+    padding: 15px 0 30px;
+    flex-wrap: wrap;
+}
+.video-box .box {
+    text-align: center;
+    padding: 0 25px;
+    position: relative;
+}
+.video-box .icon{
+    border: 1px solid #7a7a7a;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.video-box .icon img {
+    max-width: 44%;
+}
+.video-box .title {
+    padding: 15px 10px 12px;
+    font-weight: 500;
+    /* min-height: 60px; */
+    font-family: 'Adobe Clean Regular';
+}
+
+.video-box .box .icon:after{
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 14px;
+    background: url(../assets/img/arrow-black.jpg) no-repeat 0 0;
+    top: 22px;
+    left: 140px;
+    background-position: 100% 50%;
+    background-size: cover;
+}
+.video-box .box.mailArrow .icon:after{
+    background: url('../assets/img/main-arrow.jpg') no-repeat 0 0;
+    height: 54px;
+    background-size: contain;
+    top: 0;
+}
+.video-box .box.arrowDe .icon:after{
+    background: url('../assets/img/arrow-de.jpg') no-repeat 0 0;
+    background-size: cover;
+    height: 18px;
+    top: 20px;
+}
+.video-box .des {
+    font-size: 13px;
+}
+.video-box .box.last .icon:after{
+    display: none;
+}
+.video-button.btn {
+    position: absolute;
+    width: 100%;
+    bottom: -18px;
+}
+.video-button.btn a {
+    padding: 3px 25px 8px;
+    background-color: #fa0f00;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 35px;
+    text-align: center;
+    font-family: Segoe UI WestEuropean;
+    font-weight: 600;
+    display: inline-block;
+    border: 2px solid #fff;
+    font-size: 20px;
+}
+.btnPrimary sp-button{
+    background-color: red;
+    border-radius: 35px;
+    padding: 5px 25px 8px;
+    border: 2px solid #fff;
+    font-size: 20px;
+    font-weight: 600;
+}
+.section-two{
+    background-color: #f2f2f2;
+    padding: 35px 0 45px;
+}
+.section-two h3.title,
+.video-title h2 {
+    font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 25px;
+    font-weight: 700;
+    color: #323232;
+}
+.videoTitle {
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 40px;
+    font-weight: 600;
+}
+.videoTitle a{
+    color: #fa0f00;
+}
+.row{
+    display: flex;
+    margin: 0 -12px;
+    flex-wrap: wrap;
+}
+.section-two .row{
+    margin: 0 -35px;
+}
+.col-4{
+    max-width: 33.3333%;
+    padding: 0 12px;
+    flex: 0 0 33.333%;
+}
+.col-8 {
+    max-width: 66.667%;
+    flex: 0 0 66.67%;
+    padding: 0 12px;
+}
+.section-two .col-4{
+    padding: 0 35px;
+}
+.col-9{
+    max-width: 75%;
+    padding: 0 12px;
+    flex: 0 0 75%;
+}
+.col-3{
+    max-width: 25%;
+    padding: 0 12px;
+    flex: 0 0 25%;
+}
+.col-1{
+    max-width: 20%;
+    padding: 0 12px;
+    flex: 0 0 20%;
+}
+.col-6{
+    max-width: 50%;
+    padding: 0 12px;
+    flex: 0 0 50%;
+}
+.post, sp-card{
+    text-align: center;
+    background-color: #fff;
+    border-radius: 28px;
+    overflow: hidden;
+    box-shadow: 1px 2px 5px #ccc;
+    padding-bottom: 15px;
+}
+h3.post-title,
+sp-card .des span {
+    font-size: 16px;
+    padding: 15px 0 10px;
+    font-weight: 600;
+    display: block;
+}
+.post .des,
+sp-card .des {
+    font-size: 14px;
+    padding: 0 25px 15px;
+    display: block;
+}
+a.btn {
+    background-color: #fa0f00;
+    color: #fff;
+    text-decoration: none;
+    padding: 2px 25px;
+    border-radius: 25px;
+    font-family: Segoe UI WestEuropean;
+    font-weight: 600;
+}
+sp-button{
+    background-color: #fa0f00;
+    color: #fff;
+    border-radius: 25px;
+    font-weight: 600;
+    border: 2px solid #fff;
+    padding: 3px 20px 5px;
+    font-size: 14px;
+}
+.section-footer-top{
+    background:url('../assets/img/footer-bg.png') no-repeat center -17px;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    background-size: cover;
+}
+.footer-top-text {
+    color: #fff;
+    font-size: 13px;
+    line-height: 18px;
+    font-family: 'Adobe Clean Regular';
+}
+.section-footer-top .row {
+    align-items: center;
+    padding: 22px 0 6px;
+}
+.footer-top-text h4 {
+    font-family: 'Adobe Clean Regular';
+    font-size: 18px;
+    font-weight: normal;
+    padding-bottom: 18px;
+}
+.footer-bottom-btn a {
+    border: 2px solid #fff;
+    padding: 10px 20px 14px;
+    font-size: 14px;
+    font-weight: 700;
+}
+.footer-bottom-btn sp-button{
+    padding: 12px 25px 14px;
+    font-size: 14px;
+}
+.footer-bottom-btn sp-button:hover{
+    background-color: #fff;
+    color: #434bc6;
+}
+.footer-bottom-btn a:hover{
+    background-color: #fff;
+    color: #434bc6;
+}
+.footer-bottom-btn {
+    text-align: right;
+}
+.copyright {
+    color: #b4b4b4;
+    font-size: 13px;
+    padding: 15px 0;
+    font-family: 'Adobe Clean Regular';
+    background-color: #000;
+}
+.subpage #header {
+    padding: 50px 0;
+}
+.subpage #header .container {
+    display: flex;
+    align-items: center;
+}
+#header .adobe-icon {
+    max-width: 55px;
+    padding-right: 10px;
+}
+.subpage #header h1 {
+    font-size: 44px;
+}
+.contact-form {
+    padding: 35px 0;
+}
+h2.form-title {
+    font-size: 28px;
+    padding-bottom: 28px;
+}
+.form-start {
+    background-color: #f2f2f2;
+    padding: 30px 45px;
+    font-size: 14px;
+    font-family: 'Adobe Clean Regular';
+}
+.form-start .title {
+    font-size: 17px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+.form-start .col-3 {
+    padding-bottom: 15px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.form-start input[type="text"] {
+    width: 100%;
+    padding: 4px 5px;
+    max-width: 170px;
+    background: #fafafa;
+    border: 1px solid #e1e1e1;
+    font-family: 'Adobe Clean Regular';
+    margin-left: 10px;
+}
+.form-start .col-4{
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 20px;
+    align-items: center;
+}
+.form-start select {
+    background: #fafafa;
+    border: 1px solid #e1e1e1;
+    padding: 4px 6px;
+    width: 100%;
+    max-width: 118px;
+    font-family: 'Adobe Clean Regular';
+}
+.flex-right {
+    display: flex;
+    justify-content: end;
+}
+.form-start .flex-right a.btn {
+    padding: 3px 25px 5px;
+    font-size: 14px;
+}
+.success-message {
+    background-color: #f2f2f2;
+    padding: 35px 0 15px;
+}
+.checkmark img {
+    width: 84px;
+    margin-right: 20px;
+}
+.success-message .container {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.message h2 {
+    font-size: 28px;
+    line-height: 35px;
+    padding-top: 12px;
+}
+.message {
+    font-size: 14px;
+}
+.contact-bg .center-text {
+    padding: 55px 0;
+}
+h3.contact-title {
+    font-size: 28px;
+}
+.innersec{
+    text-align: center;
+    padding: 30px 0;
+    max-width: 580px;
+    width: 100%;
+    margin: 0 auto;
+}
+.innersec .mailtext{
+    background: url('../assets/img/send.jpg') no-repeat 0 12px;
+    padding: 25px 30px 25px 130px;
+    background-size: 18%;
+    font-size: 20px;
+}
+.innersec img{
+    max-width: 500px;
+    padding-bottom: 30px;
+}
+.contact-bg{
+    background: url("../assets/img/message-bg.jpg") no-repeat 0 100%;
+    background-size: contain;
+}
+.post a.btn {
+    padding-bottom: 5px;
+}
+.form-start .col-4 select {
+    max-width: 160px;
+}
+.innersec .title{
+    font-size: 34px;
+}
+.innersec .subtitle{
+    font-size: 24px;
+    padding: 10px 0;
+}
+.innersec .lasttext{
+    font-weight: 700;
+    font-size: 18px;
+}
+/* Style for the tab container */
+.tab-container {
+    display: flex;
+    justify-content: center;
+    min-height: 150px;
+}
+.tab {
+    cursor: pointer;
+    margin: 0 5px;
+    position: relative;
+    max-width: 180px;
+    width: 100%;
+    text-align: center;
+    font-family: 'Adobe Clean Blod';
+}
+.tab:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 6px;
+    background-color: #d4d4d4;
+    left: 0;
+    top: 22px;
+}
+.tab.active:after{
+    background-color: #000;
+}
+.tab span {
+    display: none;
+    font-family: 'Adobe Clean Light';
+    font-size: 13px;
+    font-style: italic;
+    padding: 24px 20px 10px;
+    color: #a6a6a6;
+}
+.tab.active span{
+    display: block;
+}
+.all-tab-message {
+    font-size: 12px;
+    font-style: italic;
+    color: #a6a6a6;
+    padding-bottom: 20px;
+}
+.tab-content {
+    display: none;
+}
+.active-content {
+    display: block;
+}
+.button-container {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.button-container button {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 0 5px;
+}
+input[type="reset"] {
+    background: transparent;
+    border: none;
+    color: red;
+    font-family: 'Adobe Clean Regular';
+    cursor: pointer;
+}
+.button-container button,
+input.btn {
+    background: red;
+    border: 2px solid #fff;
+    border-radius: 35px;
+    width: 140px;
+    font-family: 'Adobe Clean Regular';
+    padding: 8px 0 12px;
+    cursor: pointer;
+    color: #fff;
+}
+.button-container button.back {
+    background-color:#acacac;
+}
+.button-container input.btn {
+    cursor: pointer;
+    display: none;
+}
+.button-container input.btn.active{
+    display: inline;
+}
+.center-text {
+    text-align: center;
+}
+.submission {
+    background-color: #f0f0f0;
+    width: 85px;
+    padding: 20px;
+    border-radius: 50%;
+    margin: 25px auto;
+}
+.contact-bg h5 {
+    font-size: 20px;
+    font-family: 'Adobe Clean Blod';
+    margin: 0;
+    padding: 0;
+}
+.contact-bg p {
+    font-family: 'Adobe Clean Regular';
+    font-size: 18px;
+    margin: 0;
+    padding: 0px 0 40px;
+}
+
+@media (max-width:768px){
+    body{
+        padding-bottom: 230px;
+    }
+    .col-1,
+    .col-3,
+    .col-4,
+    .col-4-1,
+    .col-9,
+    .col-8{
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+    .video-box .box .icon:after{
+        display: none;
+    }
+    .post {
+        max-width: 406px;
+        margin: 0 auto 25px;
+    }
+    .video-box .box {
+        margin-bottom: 25px;
+    }
+    #header h1 {
+        font-size: 42px;
+        padding-bottom: 20px;
+    }
+    .footer-bottom-btn {
+        text-align: center;
+        padding: 30px 0 15px;
+    }
+}
